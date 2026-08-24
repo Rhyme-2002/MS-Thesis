@@ -3,7 +3,7 @@ library(haven)
 library(tidyverse)
 
 # read  the dataset
-KR_data1<- read_dta("BDKR81FL.DTA")
+KR_data1<- read_dta("data/raw/BDKR81FL.DTA")
 
 # recode variable
 KR_data <- KR_data1 %>% 
@@ -44,4 +44,4 @@ KR_data <- KR_data %>% select(
 KR_data <- na.omit(KR_data)
 
 # save the processed dataset
-write.csv(x = KR_data, file = "/ANC_data.csv", row.names = FALSE)
+write.csv(x = KR_data, file = "data/processed/ANC_data.csv", row.names = FALSE)
