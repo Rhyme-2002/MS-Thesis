@@ -1,3 +1,9 @@
+# ============================================================
+# Data Cleaning and Preparation
+# Study: Causal Effect of Higher Education on ANC Utilization
+# Dataset: BDHS 2022
+# ============================================================
+
 # necessary packages
 library(haven)
 library(tidyverse)
